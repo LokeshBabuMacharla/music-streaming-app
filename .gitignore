@@ -1,0 +1,21 @@
+# IDE files
+.metadata/
+.idea/
+*.iml
+*.project
+*.classpath
+
+# Build folders
+target/
+dist/
+build/
+
+# Dependency folders
+node_modules/
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

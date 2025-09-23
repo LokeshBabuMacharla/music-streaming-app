@@ -1,5 +1,0 @@
-package com.musicapp.backend.config;
-
-public class AWSConfiguration {
-
-}
