@@ -1,0 +1,12 @@
+// Inside SongController.java
+
+// Endpoint to get all songs OR search for songs
+@GetMapping
+public List<Song> getAllSongs(@RequestParam(required = false) String search) {
+    if (search != null && !search.isEmpty()) {
+        // If a search term is provided, use the new search method
+        return songRepository.findByTitleContainingIgnoreCaseOrArtistContainingIgnoreCase(search, search);
+    }
+    // If no search term, return all songs as before
+    return songRepository.findAll();
+}
